@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+    <title>Distributed and Cluster Computing (CPSC 3620)</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/swc.css" />
+    <link rel="alternate" type="application/rss+xml" title="Software Carpentry Blog" href="http://software-carpentry.org/feed.xml"/>
+    <meta charset="UTF-8" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body class="lesson">
+    <div class="container card">
+      <div class="banner">
+        <a href="http://citi.clemson.edu" title="Software Carpentry">
+          <img alt="Software Carpentry banner" src="img/paw.gif" width="100px" height="auto" />
+        </a>
+      </div>
+      <article>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+                    <h1 class="title">Distributed and Cluster Computing (CPSC 3620)</h1>
+          <h2 id="general-course-information">General Course Information</h2>
+<p>The objectives of this course are to investigate issues in modern distributed platforms. We will cover a number of important technologies in the areas of distributed computing in computational and data-intensive problems. By the end of the course, each student should understand and be able to apply several specific tradeoffs for parallel application and algorithms development, performance, and management on a number of distributed platforms. Each student will complete several programming and system exercises and a semester group project based on the concepts studied in the course.</p>
+<section class="objectives panel panel-warning">
+<div class="panel-heading">
+<h2 id="learning-objectives"><span class="glyphicon glyphicon-certificate"></span>Learning objectives</h2>
+</div>
+<div class="panel-body">
+<p>Graduates will be able to:</p>
+<ol style="list-style-type: decimal">
+<li>apply mathematical foundations, algorithmic principles, and computer science theory in the modeling and design of computer-based systems in a way that demonstrates comprehension of the tradeoffs involved in design choices,</li>
+<li>analyze a problem, and identify and define the computing requirements appropriate to its solution,</li>
+<li>apply design and development principles in the construction of distributed computing systems, and</li>
+<li>function effectively on teams to accomplish a common goal.</li>
+</ol>
+</div>
+</section>
+<section class="prereq panel panel-warning">
+<div class="panel-heading">
+<h2 id="prerequesites"><span class="glyphicon glyphicon-education"></span>Prerequesites</h2>
+</div>
+<div class="panel-body">
+<ol style="list-style-type: decimal">
+<li>Working knowledge of the Python programming language and Linux system.</li>
+<li>Working knowledge of data structures and algorithms</li>
+<li>Familiarity with C/C++/Java.</li>
+<li>Introduction to Python.</li>
+</ol>
+</div>
+</section>
+<h2 id="course-topics">Course Topics</h2>
+<ol style="list-style-type: decimal">
+<li><p>Introduction to Distributed Computing</p></li>
+<li><p>Distributed and Parallel File Systems</p></li>
+<li><p>Message-Passing Computing</p></li>
+<li><p>Scheduling on Cluster of Computers</p></li>
+<li><p>Big Data and Data Intensive Computing</p></li>
+<li><p>Hadoop Distributed File System (HDFS)</p></li>
+<li><p>MapReduce Programming Paradigm</p></li>
+<li><p>Memory-centric Distributed Computing</p></li>
+<li><p>Message-oriented Middleware</p></li>
+<li><p>Distributed Stream Processing</p></li>
+</ol>
+<h2 id="instructional-staff">Instructional Staff</h2>
+<ul>
+<li><strong>Instructor of Record:</strong> Dr. Linh B. Ngo</li>
+<li>Office: 2091 Barre Hall</li>
+<li>Office Hours: by appointment</li>
+<li><p>Email: LNGO [at] CLEMSON [dot] EDU</p></li>
+<li><strong>Teaching Assistant:</strong> Dung T. Nguyen</li>
+<li>Office: 222A McAdams Hall</li>
+<li>Office Hours: TBD</li>
+<li><p>Email: DUNGN [at] CLEMSON [dot] EDU</p></li>
+</ul>
+<h2 id="time-and-location">Time and Location</h2>
+<ul>
+<li>MWF 12:20PM - 01:10PM</li>
+<li>Daniel Hall 413</li>
+</ul>
+<h2 id="course-management-system">Course Management System</h2>
+<p>For this semester, we will use the new Canvas Course Management System. This is located at <a href="https://clemson.instructure.com/courses/18788" class="uri">https://clemson.instructure.com/courses/18788</a>.</p>
+<h2 id="important-dates">Important Dates</h2>
+<ul>
+<li>Jan 11, W Classes begin</li>
+<li>Jan 16, M Martin Luther King Jr. holiday</li>
+<li>Jan 25, W Last day to drop a class or withdraw without a W grade</li>
+<li>Mar 17, F Last day to drop a class or withdraw from the University without final grades</li>
+<li>Mar 20-24, M-F Spring break</li>
+<li>May 1, M 8:00AM - 10:30AM - FINAL EXAM</li>
+</ul>
+<h2 id="reference-book-optional">Reference Book (Optional)</h2>
+<p><em>Parallel Programming: Techniques and Applications using Networked Workstations and Parallel Computers</em> (2nd Edition - 2004) by Barry Wilkinson and Michael Allen. (ISBN: 0131405632)</p>
+<h2 id="laptop-requirements">Laptop requirements</h2>
+<p>As a significant portion of the course involves working with the Palmetto Supercomputer and coding, having access to a laptop during class time is important so that the students can follow the in-class materials. As there are a limited number of power outlets in the classroom, the students need to make sure that their laptops are fully charged for the duration of the class.</p>
+<h2 id="course-materials">Course Materials</h2>
+<p>Lecture slides and example codes will be available for download from the website. Links to papers on subjects we will be discussing in class will be listed on the website and/or embedded in the slides. Students are responsible for all the materials including lecture slides, example codes, and papers.</p>
+<h2 id="grading">Grading</h2>
+<p>Grades will be based on the following distribution:</p>
+<ul>
+<li>Homework Assignments: 40%</li>
+<li>Exam 1: 25% (covering the first half of the semester)</li>
+<li>Exam 2: 25% (covering the second half of the semester)</li>
+<li>Quiz and participation score: 10%</li>
+</ul>
+<p>Letter grades are assigned according to the standard scale (i.e. A: 90-100, B: 80-89, C: 70-79, D: 60-69, F: 0-59).</p>
+<h2 id="late-work">Late Work</h2>
+<p>Without prior approval from the instructors, late homework assignments will not be accepted but will be assigned a grade of zero. Unless accompanied with a valid medical or University excuse, all late submissions will be penalized. A make-up for the Exams will be given only with a valid medical or University excuse. Blackboard “notification of absence” is not sufficient.</p>
+<h2 id="attendance-policy">Attendance Policy</h2>
+<ul>
+<li>Attendance is critical to the success of students in this class.</li>
+<li>We will take note of who attends, including occasionally using attendance check in place of a quiz score.</li>
+<li>If you miss a class, you are responsible for obtaining lecture notes, handouts, and homework assignments from fellow students.</li>
+<li>If the instructor is late for class, please wait 20 minutes before leaving.</li>
+</ul>
+<h2 id="academic-integrity">Academic Integrity</h2>
+<p>“As members of the Clemson University community, we have inherited Thomas Green Clemson’s vision of this institution as a “high seminary of learning.” Fundamental to this vision is a mutual commitment to truthfulness, honor, and responsibility, without which we cannot earn the trust and respect of others. Furthermore, we recognize that academic dishonesty detracts from the value of a Clemson degree. Therefore, we shall not tolerate lying, cheating, or stealing in any form.”</p>
+<p>The instructor takes academic integrity extremely seriously and expects students to do so too. Scientific progress requires scientists to be honest in reporting their methods and results, the extent of their own contributions, and to accurately represent the research and ideas of other scientists. Failures of academic integrity such as plagiarism (i.e., representing the ideas or words of another as if they are your own) are always an insult to instructors and other students. Cheating, plagiarism, and all other academic integrity violations will handle according to the University policies regarding classroom expectations and academic integrity violation, as specified at http://www.clemson.edu/academics/academic-integrity/</p>
+<h2 id="collaboration-policy">Collaboration Policy</h2>
+<p>In and out of class assignments are opportunities for learning and discovery. Collaboration between students on homework assignments in this class is permitted. Collaboration includes students working together to gain an understanding of course concepts, active discussions with the instructor and other people to learn about course material, and other activities in which a student is actively seeking to learn and understand the topics covered in the course. I do expect that you understand and can explain any homework solution that you submit, no matter how you worked on it.</p>
+<p>As has always been the case, however, plagiarism is not allowed. Taking assignments from other classmates or downloading completed assignments from websites is not allowed. These are activities that are simply meant to earn a score, not understand the course material. If you collaborate with other students in class or use sources other than those provided for everyone in the course (e.g., instructor, recommended textbook, the course web site, or the lectures) to help yourself learn and understand, then you must give appropriate credit to those collaborators and/or sources. As long as you acknowledge the collaboration that occurred, your grade will not be affected nor will you be charged with academic misconduct. On the other hand, a failure to acknowledge collaborations or give appropriate credit to sources of help (other than course materials or personnel as noted above) will be treated as plagiarism.</p>
+<h2 id="contributorship-statement">Contributorship Statement</h2>
+<p>To ensure that you acknowledge contributions, collaborations and sources, you are required to include a contributorship statement at the beginning of every assignment that you submit. The statement should say:</p>
+<p>“I worked on this assignment alone, using only course materials.”</p>
+<p>OR</p>
+<p>“I worked on this assignment with <strong>give the names of the people you worked with</strong>. My role in completing the assignment was <strong>provide description of all your contributions</strong>, while <strong>provide names of other collaborators</strong> role in completing the assignment was <strong>provide a description of their contributions</strong>. We consulted related material that can be found at <strong>cite any other materials not provided as course materials.</strong>”</p>
+<p>Any assignment that does not include a collaboration statement will not receive a grade until the statement is provided.</p>
+<h2 id="disability-accommodations">Disability Accommodations</h2>
+<p>Students with disabilities needing accommodations should make an appointment with Margaret M. Camp, Director of Student Accessibility Services, to discuss specific needs within the first month of classes. Student should present a Faculty Accommodation Letter from Student Disability Services when they meet with instructors. The Office of Student Disability Services in Suite 239, Academic Success Building (864-656-6848; sds-l@clemson.edu). Please be aware that accommodations are not retroactive and new Faculty Accommodation Letters must be presented each semester.</p>
+<h2 id="title-ix-statement">Title IX Statement</h2>
+<p>Clemson University is committed to a policy of equal opportunity for all persons and does not discriminate on the basis of race, color, religion, sex, sexual orientation, gender, pregnancy, national origin, age, disability, veterans status, genetic information or protected activity (e.g., opposition to prohibited discrimination or participation in any complaint process, etc.) in employment, educational programs and activities, admissions and financial aid. This includes a prohibition against sexual harassment and sexual violence as mandated by Title IX of the Education Amendments of 1972.</p>
+<p>This policy is located at http://www.clemson.edu/campuslife/campus-services/access/title-ix/.</p>
+<p>Mr. Jerry Knighton is the Clemson University Title IX Coordinator. He also is the Director of Access and Equity. His office is located at 111 Holtzendorff Hall, 864.656.3181 (voice) or 864.565.0899 (TDD).</p>
+        </div>
+      </div>
+      </article>
+      <div class="footer">
+        <a class="label clemson-orange" href="http://citi.clemson.edu">CITI</a>
+        <a class="label clemson-orange" href="https://github.com/clemsoncoe/hpc-workshop">Source</a>
+        <a class="label clemson-orange" href="mailto:atrikut@clemson.edu">Contact</a>
+        <a class="label clemson-orange" href="LICENSE.html">License</a>
+      </div>
+    </div>
+    <!-- Javascript placed at the end of the document so the pages load faster -->
+    <script src="http://software-carpentry.org/v5/js/jquery-1.9.1.min.js"></script>
+    <script src="css/bootstrap/bootstrap-js/bootstrap.js"></script>
+  </body>
+</html>
