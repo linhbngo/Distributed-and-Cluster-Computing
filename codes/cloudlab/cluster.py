@@ -11,16 +11,21 @@ pc.defineParameter("workerCount",
 
 pc.defineParameter("controllerHost", "Name of head node",
                    portal.ParameterType.STRING, "node0", advanced=True,
-                   longDescription="The short name of the master node. You shold leave this alone unless you really want the hostname to change.")
+                   longDescription="The short name of the master node. \
+                   You shold leave this alone unless you really want the \
+                   hostname to change.")
 
 params = pc.bindParameters()
 
-tourDescription = "This profile provides a configurable cluster with one master running Apache and customizable computing nodes."
+tourDescription = "This profile provides a configurable cluster with \
+one master running Apache and customizable computing nodes."
 
 tourInstructions = \
   """
 ### Basic Instructions
-Once your experiment nodes have booted, and this profile's configuration scripts have finished deploying, you'll be able to visit [the Apache Webserver interface](http://{host-%s}) on the master node. All  
+Once your experiment nodes have booted, and this profile's \
+configuration scripts have finished deploying, you'll be able to \
+visit [the Apache Webserver interface](http://{host-%s}) on the master node. All  
 """ % (params.controllerHost)
 
 #
@@ -49,9 +54,9 @@ for i in range(params.workerCount + 1):
 
     if i == 0:
         node.addService(rspec.Execute(shell="/bin/sh",
-                                      command="sudo apt-get update"))
+                                      command="sudo apt-get install apache2"))
         node.addService(rspec.Execute(shell="/bin/sh",
-                                      command="sudo apt-get install -y apache2"))
+                                      command="sudo service apache2 start"))
 
 # Print the RSpec to the enclosing page.
 portal.context.printRequestRSpec(request)
