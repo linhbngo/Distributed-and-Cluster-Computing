@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 # sendrecv.py
-#!/usr/bin/env python
-# sendrecv.py
 from mpi4py import MPI
 import random
 comm = MPI.COMM_WORLD
