@@ -1,0 +1,30 @@
+#!/bin/bash
+
+#PBS -N movieAnalyzer
+#PBS -l select=1:ncpus=8:mem=8gb
+#PBS -l walltime=00:15:00
+#PBS -j oe
+
+# load hdp module and initilalize Keberos tokens
+module load hdp/0.1
+cypress-kinit
+klist
+
+# cd into directory containing the PBS script
+cd $PBS_O_WORKDIR
+
+# attempt to remove output directory
+hdfs dfs -rm -r intro-to-hadoop/output-movielens-03
+
+# submit Hadoop job to Cypress
+yarn jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar \
+    -input /repository/movielens/ratings.csv \
+    -output intro-to-hadoop/output-movielens-03 \
+    -file ./codes/avgRatingMapper02.py \
+    -mapper avgRatingMapper02.py \
+    -file ./codes/avgRatingReducer02.py \
+    -reducer avgRatingReducer02.py \
+    -file ./movielens/movies.csv
+
+# export output data back to Palmetto for further analysis
+hdfs dfs -get intro-to-hadoop/output-movielens-03/part-00000 .
