@@ -19,5 +19,6 @@ if rank == 0:
 else:
     xGathered = None
 comm.Gatherv(xlocal,[xGathered,(1,7,1),(0,1,1),MPI.DOUBLE])
-print (xlocal); 
-print ("process " + str(rank) + " has " +str(xGathered))
+print (" process ", rank, " has ", xlocal); 
+if (rank == 0):
+    print ("process " + str(rank) + " has " +str(xGathered))

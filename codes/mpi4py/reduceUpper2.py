@@ -7,7 +7,7 @@ rank = comm.Get_rank()
 LENGTH = 3
 x = None
 x_local = numpy.linspace(rank*LENGTH,(rank+1)*LENGTH, LENGTH)
-print (x_local)
+print (rank, x_local)
 total = numpy.zeros(LENGTH)
 comm.Reduce(x_local,total, op=MPI.SUM, root = 0)
-print (total)
+print (rank, total)

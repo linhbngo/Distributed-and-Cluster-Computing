@@ -12,4 +12,4 @@ else:
     data = None
 data = comm.bcast(data, root=0)
 print ("process %s" % (rank))
-print (rank,data)
+print (rank,data) 

@@ -6,7 +6,7 @@ comm = MPI.COMM_WORLD
 rank = comm.Get_rank();size = comm.Get_size();LENGTH = 3
 if rank == 0:
     x = numpy.linspace(1,size*LENGTH,size*LENGTH)
-    print (x)
+    print ("Original data: ", x)
 else:
     x = None
 x_local = numpy.zeros(LENGTH)

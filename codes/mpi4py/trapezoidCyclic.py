@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# trapezoidRoundRobin.py
+# trapezoidCyclic.py
 import numpy; from mpi4py import MPI
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank(); size = comm.Get_size()

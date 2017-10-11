@@ -11,4 +11,4 @@ else:
     data = None
 partial_data = comm.scatter(data, root=0)
 print (data)
-print (partial_data)
+print (rank, partial_data)

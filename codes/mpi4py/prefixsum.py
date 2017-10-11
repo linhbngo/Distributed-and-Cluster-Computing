@@ -11,7 +11,7 @@ for i in range(0,int(N/size)):
 
 print("Process ", rank, " has initial local numbers: ", local_nums);
 print("Process ", rank, " has initial local prefix sums: ", local_sums)
-
+comm.Barrier()
 for i in range(0, int(math.log2(size))):
     distance = int(math.pow(2,i))
     if (rank < (size - distance)):
@@ -21,5 +21,5 @@ for i in range(0, int(math.log2(size))):
         comm.Recv(recv_sum, source = rank - distance, tag = 0, status = status);
         for j in range(0,int(N/size)):
             local_sums[j] += recv_sum[0]
-
+comm.Barrier()
 print("Process ", rank, " has final prefix sums: ", local_sums)  
