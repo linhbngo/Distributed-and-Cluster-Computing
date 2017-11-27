@@ -90,3 +90,8 @@ ENV/
 
 # temporary data
 movielens*
+
+# Twitter
+Twitter
+
+core.*
