@@ -53,21 +53,6 @@ The objectives of this course are to investigate issues in modern distributed pl
 -   MWF 12:20PM - 01:10PM
 -   TBD
 
-## Canvas Course Management System
-
-- [CPSC-4770](https://clemson.instructure.com/courses/24376)
-- [CPSC-6770](https://clemson.instructure.com/courses/33222)
-
-
-## Important Dates
-
-- August 23, W Classes begin
-- September 5, T Last day to drop a class or withdraw without a W grade
-- October 16-17, M/T Fall Break
-- October 31, T Last day to drop a class or withdraw from the University without final grades
-- November 22-24, W-F Thanksgiving
-- December      Final Exam
-
 ## Reference Book (Optional)
 
 *Parallel Programming: Techniques and Applications using Networked Workstations and Parallel Computers* (2nd Edition - 2004) by Barry Wilkinson and Michael Allen. (ISBN: 0131405632)
@@ -80,15 +65,23 @@ As a significant portion of the course involves working with the Palmetto Superc
 
 Lecture slides and example codes will be available for download from the website. Links to papers on subjects we will be discussing in class will be listed on the website and/or embedded in the slides. Students are responsible for all the materials including lecture slides, example codes, and papers.
 
-## Grading
-
+## Grading (4770)
 Grades will be based on the following distribution:
 
--   Homework Assignments: 40%
--   Exam 1: 25%  (covering the first half of the semester)
--   Exam 2: 25%  (covering the second half of the semester)
--   Quiz and participation score:  10%
+Assignment:50%
+Exam 1: 25%
+Exam 2: 15%
+Quiz and participation: 10%
+Letter grades are assigned according to the standard scale (i.e. A: 90-100, B: 80-89, C: 70-79, D: 60-69, F: 0-59).
 
+## Grading (6770)
+Grades will be based on the following distribution:
+
+Assignment: 30%
+Project: 20%
+Exam 1: 25%
+Exam 2: 15%
+Quiz and participation: 10%
 Letter grades are assigned according to the standard scale (i.e. A: 90-100, B: 80-89, C: 70-79, D: 60-69, F: 0-59).
 
 ## Late Work
