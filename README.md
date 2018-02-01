@@ -45,13 +45,13 @@ The objectives of this course are to investigate issues in modern distributed pl
 
 -   **Instructor of Record:** Dr. Linh B. Ngo
 -   Office: 2091 Barre Hall
--   Office Hours: by appointment
+-   Office Hours: M 10:00AM - 11:00AM, R 1:00PM - 2:00PM
 -   Email: LNGO [at] CLEMSON [dot] EDU
 
 ## Time and Location
 
 -   MWF 12:20PM - 01:10PM
--   TBD
+-   Riggs 227
 
 ## Reference Book (Optional)
 
@@ -68,19 +68,19 @@ Lecture slides and example codes will be available for download from the website
 ## Grading (4770)
 Grades will be based on the following distribution:
 
-Assignment:50%
-Exam 1: 25%
-Exam 2: 15%
+Assignment:60%
+Exam 1: 20%
+Exam 2: 10%
 Quiz and participation: 10%
 Letter grades are assigned according to the standard scale (i.e. A: 90-100, B: 80-89, C: 70-79, D: 60-69, F: 0-59).
 
 ## Grading (6770)
 Grades will be based on the following distribution:
 
-Assignment: 30%
+Assignment: 40%
 Project: 20%
-Exam 1: 25%
-Exam 2: 15%
+Exam 1: 20%
+Exam 2: 10%
 Quiz and participation: 10%
 Letter grades are assigned according to the standard scale (i.e. A: 90-100, B: 80-89, C: 70-79, D: 60-69, F: 0-59).
 
@@ -116,7 +116,7 @@ OR
 
 "I worked on this assignment with **give the names of the people you worked with**. My role in completing the assignment was **provide description of all your contributions**, while **provide names of other collaborators** role in completing the assignment was **provide a description of their contributions**. We consulted related material that can be found at **cite any other materials not provided as course materials.**"
 
-Any assignment that does not include a collaboration statement will not receive a grade until the statement is provided.
+Any assignment that does not include a collaboration statement is assumed to be done individually using only course materials. 
 
 ## Disability Accommodations
 
