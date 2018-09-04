@@ -87,7 +87,7 @@ Grades will be based on the following distribution:
 
 - You are required to come to office hours at least once (with something to discuss) before October 1st. **If you don't, your participation score for the semester will be zero (0).**
 
-Letter grades are assigned according to the standard scale: (i.e. A: 90-100, B: 80-89, C: 70-79, D: 60-69, F: 0-59).
+Letter grades are assigned according to the following scale:
 
 | Number   | 100-93 | 92-90 | 89-87 | 86-83 | 82-80 | 79-77 | 76-73 | 72-70 | 69-67 | 66-63 | 62-60 | <= 59 |
 | -------- |:------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
