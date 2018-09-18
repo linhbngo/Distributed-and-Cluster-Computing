@@ -29,7 +29,7 @@ int main(int argc, char** argv)
   for (i = 0; i < size/2; i++){
     MPI_Send(&buf,1,MPI_INT,des1,tag,MPI_COMM_WORLD);
     MPI_Recv(&buf,1,MPI_INT,MPI_ANY_SOURCE,tag,MPI_COMM_WORLD,&status);
-  //MPI_Barrier(MPI_COMM_WORLD);
+    MPI_Barrier(MPI_COMM_WORLD);
   }
 
   MPI_Send(&buf,1,MPI_INT,des2,tag,MPI_COMM_WORLD);

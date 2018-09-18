@@ -10,7 +10,7 @@ int main(int argc, char** argv) {
   /* Get the rank of the process */
   MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
 
-  if (my_rank % 2 == 0) {
+  if (my_rank % 2 == 1) {
     printf ("Process %d is even \n", my_rank);
   } else {
     printf ("Process %d is odd \n", my_rank);
