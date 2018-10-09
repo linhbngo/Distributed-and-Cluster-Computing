@@ -32,8 +32,8 @@ int main(int argc, char* argv[]) {
   x_start = (double)(rank % squareWidth) / squareWidth;
   y_start = (double)((rank / squareWidth)) / squareWidth;
 
-  printf("Rank %d out of %d has starting x %f and starting y %f on a square of size %d \n", 
-         rank, size, x_start, y_start, squareWidth);
+  //printf("Rank %d out of %d has starting x %f and starting y %f on a square of size %d \n", 
+  //       rank, size, x_start, y_start, squareWidth);
     
   for (i = 0; i < nPointsPerRegion; i++) {
     x_rand = (double)rand() / ((double)RAND_MAX * squareWidth) + x_start;
