@@ -95,3 +95,5 @@ movielens*
 Twitter
 
 core.*
+output.dat
+testmpiio.*
