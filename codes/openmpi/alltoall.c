@@ -21,7 +21,7 @@ int main(int argc,char *argv[]){
   z = (float) rand() / RAND_MAX;
     
   for(i=0; i < size; i++){
-    scounts[i]= rank;
+    scounts[i]= rank * i + i;
   }
   
   printf("myid = %d scounts = ",rank);

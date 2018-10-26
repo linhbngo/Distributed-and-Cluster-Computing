@@ -16,14 +16,15 @@ int main(int argc, char * argv[] ) {
   /* Am I sender or receiver? */
   /* Who am I sending/receiving to/from */
   distance = 1;
-  i = 0;
+  i = 1;
   while (distance <= size / 2){      
     if (rank < distance) {
-      printf ("At iteration %d, sender %d sends to %d\n", i, rank, rank + distance);
+      printf ("At time step %d, sender %d sends to %d\n", i, rank, rank + distance);
     }
     if ((rank >= distance) && (rank < distance * 2)){
-      printf ("At iteration %d, receiver %d receives from %d\n", i, rank, rank - distance);
+      printf ("At time step %d, receiver %d receives from %d\n", i, rank, rank - distance);
     }
+    printf ("Process %d has distance value %d and time step %d\n", rank, distance, i);
     distance = distance * 2;
     i += 1;
   }

@@ -19,6 +19,9 @@ int main(int argc, char *argv[])
     /* initializes recvbuf to receive 10 numbers */
     if (rank == 0){
       recvbuf = malloc(sizeof(int) * (10));
+
+      for (i = 0; i < 10; i ++)
+        recvbuf[i] = -1;
     }
     
     /* initializes sendbuf to receive 10 numbers */
@@ -29,7 +32,7 @@ int main(int argc, char *argv[])
     
     // calculate displacements
     for (i = 1; i < 4; i++) {
-        displs[i] = displs[i-1] + recvcounts[i-1];
+        displs[i] = displs[i-1] + recvcounts[i-1] - 1;
     }
 
     // divide the data among processes as described by sendcounts and displs

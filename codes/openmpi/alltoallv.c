@@ -66,11 +66,3 @@ int main(int argc,char *argv[]){
   printf("\n");
   MPI_Finalize();
 }
-/*
-  0:rank= 0 scounts=1 7 4
-  0:rank= 0 scounts=0 1 1 1 1 1 1 2
-  1:rank= 1 scounts=6 2 4
-  1:rank= 1 scounts=0 0 0 0 0 0 0 1 1 2 2 2 2 2 2 2
-  2:rank= 2 scounts=1 7 4
-  2:rank= 2 scounts=0 0 0 0 1 1 1 1 2 2 2 2
-*/

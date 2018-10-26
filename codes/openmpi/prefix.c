@@ -19,7 +19,7 @@ int main(int argc, char** argv){
 
   iter = log(size) / log(2);
   printf("Process %d has prefix sum %d\n", rank, local_sum);
-  //MPI_Barrier(MPI_COMM_WORLD);
+  MPI_Barrier(MPI_COMM_WORLD);
   for (i = 0; i < iter; i++){
     distance = pow(2,i);
 
@@ -38,7 +38,7 @@ int main(int argc, char** argv){
       local_sum += tmp;
     }
     printf("Process %d has prefix sum %d\n", rank, local_sum);
-    //MPI_Barrier(MPI_COMM_WORLD);
+    MPI_Barrier(MPI_COMM_WORLD);
   }
   MPI_Finalize();
   return 0;
