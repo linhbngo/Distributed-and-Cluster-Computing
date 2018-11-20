@@ -34,7 +34,7 @@ main(int argc, char **argv)
 
   /*  write buffer to file*/
   MPI_File_write_at(outfile, offset, myarray, local_size, MPI_INT, &status);
-
+  
   /* print out number of bytes written */
   MPI_Get_elements(&status, MPI_CHAR, &nbytes);
   printf("TASK %d wrote %d bytes\n", rank, nbytes);
