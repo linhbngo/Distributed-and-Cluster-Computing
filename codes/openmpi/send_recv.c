@@ -8,14 +8,12 @@ int main(int argc, char** argv)
   int size;             
   int tag=0;
   int buf,i;
-  int des1,des2;
   MPI_Status status;
 
   MPI_Init(&argc, &argv);
   MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
   MPI_Comm_size(MPI_COMM_WORLD, &size);
 
-  /*  set up data */
   buf = my_rank; 
 
   printf("Process %2d has original value %2d \n",my_rank,buf);
@@ -32,4 +30,4 @@ int main(int argc, char** argv)
   printf("Process %2d now has value %2d\n",my_rank,buf);
 
   MPI_Finalize();
-} /* end main */
+}
